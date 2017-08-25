@@ -129,7 +129,7 @@ $(function(){
       swal({
         title: "BLACKJACK!",
         text: "You hit 21. Please Click Stand to receive your winnings",
-        imageUrl: "./images/Blackjack21.jpg"
+        imageUrl: "images/Blackjack21.jpg"
       });
       hit.hide()
     }
@@ -147,7 +147,7 @@ $(function(){
       swal({
         title: "Sorry",
         text: "You lost the hand.",
-        imageUrl: "./images/You-Are-A-Loser-Picture.jpg"
+        imageUrl: "images/You-Are-A-Loser-Picture.jpg"
       });
       losses++
       $("#losses-val").text(losses)
@@ -163,7 +163,7 @@ $(function(){
       swal({
         title: "BLACKJACK!",
         text: "You hit 21. Please Click Stand to receive your winnings",
-        imageUrl: "./images/Blackjack21.jpg"
+        imageUrl: "images/Blackjack21.jpg"
       });
       hit.hide()
     }
@@ -235,7 +235,7 @@ $(function(){
         swal({
           title: "Sorry",
           text: "You lost the hand.",
-          imageUrl: "./images/You-Are-A-Loser-Picture.jpg"
+          imageUrl: "images/You-Are-A-Loser-Picture.jpg"
         });
         losses++
         $("#losses-val").text(losses)
@@ -246,7 +246,7 @@ $(function(){
         swal({
           title: "PUSH!",
           text: "You tied with the dealer.",
-          imageUrl: "./images/Safe145-Push.jpg"
+          imageUrl: "images/Safe145-Push.jpg"
         });
         balanceValue = parseInt(balanceValue)
         console.log(balanceValue);
@@ -272,7 +272,7 @@ $(function(){
         swal({
           title: "BLACKJACK!",
           text: "You hit 21. Please Click Stand to receive your winnings",
-          imageUrl: "./images/Blackjack21.jpg"
+          imageUrl: "images/Blackjack21.jpg"
         });
       }
       console.log("Total Points", playerPoints);
@@ -363,10 +363,12 @@ $(function(){
         var dealerCardImg = $('<img id="shown-DealerCard" src="images/PNG-cards-1.3/' + firstDealerCardPulled + '_of_' + firstDealerSuit +'.png">')
         dealerCard.append(dealerCardImg)
       }
+
       function backOfDealerCardImage(){
-        var backOfCard = $('<img id="hidden-DealerCard" src="./images/playing-card-back.jpg">')
+        var backOfCard = $('<img id="hidden-DealerCard" src="images/playing-card-back.jpg">')
         dealerCard.append(backOfCard)
       }
+
       function dealerCardImgHidden(){
         var backOfCard = $("#hidden-DealerCard")
         backOfCard.remove()
