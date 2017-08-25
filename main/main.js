@@ -103,7 +103,7 @@ $(function(){
       swal()
       swal({
       title: "<h1>GAME OVER!</h1>",
-      text: "You lost all of your money. <a href='/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/index4.html' style='color:#F8BB86'> Click Here to Play Again<a>",
+      text: "You lost all of your money. <a href='./blackjack.html' style='color:#F8BB86'> Click Here to Play Again<a>",
       html: true
       });
       form.hide()
@@ -129,7 +129,7 @@ $(function(){
       swal({
         title: "BLACKJACK!",
         text: "You hit 21. Please Click Stand to receive your winnings",
-        imageUrl: "/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/Blackjack21.jpg"
+        imageUrl: "./images/Blackjack21.jpg"
       });
       hit.hide()
     }
@@ -147,7 +147,7 @@ $(function(){
       swal({
         title: "Sorry",
         text: "You lost the hand.",
-        imageUrl: "/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/You-Are-A-Loser-Picture.jpg"
+        imageUrl: "./images/You-Are-A-Loser-Picture.jpg"
       });
       losses++
       $("#losses-val").text(losses)
@@ -163,7 +163,7 @@ $(function(){
       swal({
         title: "BLACKJACK!",
         text: "You hit 21. Please Click Stand to receive your winnings",
-        imageUrl: "/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/Blackjack21.jpg"
+        imageUrl: "./images/Blackjack21.jpg"
       });
       hit.hide()
     }
@@ -235,7 +235,7 @@ $(function(){
         swal({
           title: "Sorry",
           text: "You lost the hand.",
-          imageUrl: "/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/You-Are-A-Loser-Picture.jpg"
+          imageUrl: "./images/You-Are-A-Loser-Picture.jpg"
         });
         losses++
         $("#losses-val").text(losses)
@@ -246,7 +246,7 @@ $(function(){
         swal({
           title: "PUSH!",
           text: "You tied with the dealer.",
-          imageUrl: "/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/Safe145-Push.jpg"
+          imageUrl: "./images/Safe145-Push.jpg"
         });
         balanceValue = parseInt(balanceValue)
         console.log(balanceValue);
@@ -272,7 +272,7 @@ $(function(){
         swal({
           title: "BLACKJACK!",
           text: "You hit 21. Please Click Stand to receive your winnings",
-          imageUrl: "/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/Blackjack21.jpg"
+          imageUrl: "./images/Blackjack21.jpg"
         });
       }
       console.log("Total Points", playerPoints);
