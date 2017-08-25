@@ -4,7 +4,7 @@ body{
 
  #blackjack-table {
   display: block;
-  background-image: url('/Users/vvt941/Documents/developer/week7/unit-1-project/blackjack/images/blackjack_table.jpg');
+  background-image: url('images/blackjack_table.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 900px;
